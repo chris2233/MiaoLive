@@ -17,7 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    // 设置基本配置
+    [self setupView];
+}
+
+- (void)setupView
+{
+    self.view.frame = screenBounds;
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 @end

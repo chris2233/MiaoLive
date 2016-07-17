@@ -17,12 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // 配置基本配置
+    [self setupTableView];
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupTableView
+{
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 #pragma mark - Table view data source
@@ -35,6 +38,16 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     return 20;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier"];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"reuseIdentifier"];
+    }
+    return cell;
 }
 
 

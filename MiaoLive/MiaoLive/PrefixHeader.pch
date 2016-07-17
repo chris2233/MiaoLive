@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 
 #import "UIView+ZJExtense.h"
+#import "UIBarButtonItem+ZJExtension.h"
 
 #pragma mark - defineZJLog
 
@@ -22,10 +23,11 @@
 
 
 /**
- *  屏幕的宽高
+ *  系统的一些宽高
  */
 #define screenH [UIScreen mainScreen].bounds.size.height
 #define screenW [UIScreen mainScreen].bounds.size.width
 #define screenBounds [UIScreen mainScreen].bounds
+#define ZHJStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 
 #endif

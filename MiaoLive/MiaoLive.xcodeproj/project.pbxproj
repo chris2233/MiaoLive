@@ -65,12 +65,12 @@
 		2F4D9C871D3B9C8B00BA2675 /* ZHJCareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJCareViewController.m; sourceTree = "<group>"; };
 		2F4D9C881D3B9C8B00BA2675 /* ZHJHotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJHotTableViewController.h; sourceTree = "<group>"; };
 		2F4D9C891D3B9C8B00BA2675 /* ZHJHotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJHotTableViewController.m; sourceTree = "<group>"; };
-		2F4D9C8A1D3B9C8B00BA2675 /* ZHJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNavigationController.h; sourceTree = "<group>"; };
-		2F4D9C8B1D3B9C8B00BA2675 /* ZHJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNavigationController.m; sourceTree = "<group>"; };
+		2F4D9C8A1D3B9C8B00BA2675 /* ZHJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHJNavigationController.h; path = ../Home/ZHJNavigationController.h; sourceTree = "<group>"; };
+		2F4D9C8B1D3B9C8B00BA2675 /* ZHJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHJNavigationController.m; path = ../Home/ZHJNavigationController.m; sourceTree = "<group>"; };
 		2F4D9C8C1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNewCollectionViewController.h; sourceTree = "<group>"; };
 		2F4D9C8D1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNewCollectionViewController.m; sourceTree = "<group>"; };
-		2F4D9C8E1D3B9C8B00BA2675 /* ZHJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJTabBarController.h; sourceTree = "<group>"; };
-		2F4D9C8F1D3B9C8B00BA2675 /* ZHJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJTabBarController.m; sourceTree = "<group>"; };
+		2F4D9C8E1D3B9C8B00BA2675 /* ZHJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHJTabBarController.h; path = ../Home/ZHJTabBarController.h; sourceTree = "<group>"; };
+		2F4D9C8F1D3B9C8B00BA2675 /* ZHJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHJTabBarController.m; path = ../Home/ZHJTabBarController.m; sourceTree = "<group>"; };
 		2F4D9C951D3B9C8B00BA2675 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		2F4D9C961D3B9C8B00BA2675 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		2F4D9C981D3B9C8B00BA2675 /* ShowTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTimeViewController.h; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 				2F4D9C821D3B9C8B00BA2675 /* Classes */,
 				2F4D9C441D3A6D4000BA2675 /* Frameworks */,
 				2F4D9C4B1D3A6D4100BA2675 /* Resource */,
-				2F4D9C1F1D3A6CB400BA2675 /* LaunchScreen.storyboard */,
 				2F4D9C111D3A6CB400BA2675 /* Supporting Files */,
 			);
 			path = MiaoLive;
@@ -148,6 +147,7 @@
 		2F4D9C111D3A6CB400BA2675 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F4D9C1F1D3A6CB400BA2675 /* LaunchScreen.storyboard */,
 				2F4D9C621D3A798500BA2675 /* PrefixHeader.pch */,
 				2F4D9C121D3A6CB400BA2675 /* main.m */,
 			);
@@ -208,16 +208,12 @@
 			children = (
 				2F4D9C841D3B9C8B00BA2675 /* HomeViewController.h */,
 				2F4D9C851D3B9C8B00BA2675 /* HomeViewController.m */,
-				2F4D9C861D3B9C8B00BA2675 /* ZHJCareViewController.h */,
-				2F4D9C871D3B9C8B00BA2675 /* ZHJCareViewController.m */,
 				2F4D9C881D3B9C8B00BA2675 /* ZHJHotTableViewController.h */,
 				2F4D9C891D3B9C8B00BA2675 /* ZHJHotTableViewController.m */,
-				2F4D9C8A1D3B9C8B00BA2675 /* ZHJNavigationController.h */,
-				2F4D9C8B1D3B9C8B00BA2675 /* ZHJNavigationController.m */,
 				2F4D9C8C1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.h */,
 				2F4D9C8D1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.m */,
-				2F4D9C8E1D3B9C8B00BA2675 /* ZHJTabBarController.h */,
-				2F4D9C8F1D3B9C8B00BA2675 /* ZHJTabBarController.m */,
+				2F4D9C861D3B9C8B00BA2675 /* ZHJCareViewController.h */,
+				2F4D9C871D3B9C8B00BA2675 /* ZHJCareViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,6 +242,10 @@
 		2F4D9C931D3B9C8B00BA2675 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2F4D9C8E1D3B9C8B00BA2675 /* ZHJTabBarController.h */,
+				2F4D9C8F1D3B9C8B00BA2675 /* ZHJTabBarController.m */,
+				2F4D9C8A1D3B9C8B00BA2675 /* ZHJNavigationController.h */,
+				2F4D9C8B1D3B9C8B00BA2675 /* ZHJNavigationController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
