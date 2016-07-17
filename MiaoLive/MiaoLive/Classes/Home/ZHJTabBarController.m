@@ -68,7 +68,6 @@
     [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar_bg_414x70"] forBarMetrics:UIBarMetricsDefault];
     // 将包装好的nav设置为tabbar的子控制器
     [self addChildViewController:nav];
-    
 }
 
 

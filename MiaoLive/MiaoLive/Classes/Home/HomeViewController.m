@@ -7,6 +7,9 @@
 //
 
 #import "HomeViewController.h"
+#import "ZHJHotTableViewController.h"
+#import "ZHJNewCollectionViewController.h"
+#import "ZHJCareViewController.h"
 
 @interface HomeViewController ()
 
@@ -18,6 +21,11 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
+    
+}
+
+- (void)setupChildVcs
+{
     
 }
 @end
