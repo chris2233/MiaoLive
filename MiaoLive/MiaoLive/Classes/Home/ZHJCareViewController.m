@@ -23,7 +23,6 @@
 
 - (void)setupView
 {
-    self.view.frame = screenBounds;
     self.view.backgroundColor = [UIColor yellowColor];
 }
 

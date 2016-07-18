@@ -38,10 +38,6 @@
     [self setupTopTitles];
     
     [self setupScrollView];
-    
-    // 设置背景颜色
-    self.view.backgroundColor = [UIColor yellowColor];
-    
 }
 
 #pragma mark - 基本配置
@@ -62,11 +58,11 @@
 - (void)setupNav
 {
     // 创建左边按钮
-    UIBarButtonItem *leftButtonItem = [UIBarButtonItem itemWithImageName:@"search_15x14" highImage:@"" target:self action:@selector(leftButtonItemClick)];
+    UIBarButtonItem *leftButtonItem = [UIBarButtonItem itemWithImageName:@"search_15x14" highImage:nil target:self action:@selector(leftButtonItemClick)];
     self.navigationItem.leftBarButtonItem = leftButtonItem;
 
     // 创建右边按钮
-    UIBarButtonItem *rightButtonItem = [UIBarButtonItem itemWithImageName:@"head_crown_24x24" highImage:@"" target:self action:@selector(rightButtonItemClick)];
+    UIBarButtonItem *rightButtonItem = [UIBarButtonItem itemWithImageName:@"head_crown_24x24" highImage:nil target:self action:@selector(rightButtonItemClick)];
     self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 
@@ -123,11 +119,13 @@
 - (void)setupScrollView
 {
     UIScrollView *contentView = [[UIScrollView alloc] init];
-    contentView.frame = self.view.bounds;
+    contentView.frame = CGRectMake(0, 0, ZHJScreenW, ZHJScreenH - ZHJTabbarHeight - ZHJNavBarHeight - ZHJStatusBarHeight);
     contentView.delegate = self;
     contentView.pagingEnabled = YES;
-    contentView.backgroundColor = [UIColor lightGrayColor];
+    contentView.backgroundColor = [UIColor whiteColor];
     contentView.contentSize = CGSizeMake(contentView.width * self.childViewControllers.count, 0);
+    contentView.showsVerticalScrollIndicator = NO;
+    contentView.showsHorizontalScrollIndicator = NO;
     // 把滚动视图放到最底层
     [self.view insertSubview:contentView atIndex:0];
     self.contentView = contentView;
@@ -178,7 +176,7 @@
     
     // 设置itemSize
     CGFloat margin = 1;
-    CGFloat width = (screenW - margin * 2) / 3;
+    CGFloat width = (ZHJScreenW - margin * 2) / 3;
     CGFloat height = width;
     layout.itemSize = CGSizeMake(width, height);
     // 横向间距
@@ -186,7 +184,7 @@
     // 纵向间距
     layout.minimumInteritemSpacing = margin;
     // 设置uicollectionview 边距
-    layout.sectionInset = UIEdgeInsetsMake(0, 5, 5, 5);
+    layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
     return layout;
 }

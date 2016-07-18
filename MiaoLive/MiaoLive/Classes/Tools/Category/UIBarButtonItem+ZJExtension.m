@@ -15,7 +15,10 @@
     //设置导航栏按钮
     UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [button setBackgroundImage:[UIImage imageNamed:image] forState:(UIControlStateNormal)];
-    [button setBackgroundImage:[UIImage imageNamed:highImage] forState:(UIControlStateHighlighted)];
+    if (highImage != nil)
+    {
+        [button setBackgroundImage:[UIImage imageNamed:highImage] forState:(UIControlStateHighlighted)];
+    }
     //设置button的方法
     [button addTarget:target action:action forControlEvents:(UIControlEventTouchUpInside)];
     

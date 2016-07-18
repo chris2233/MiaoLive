@@ -25,9 +25,11 @@
 /**
  *  系统的一些宽高
  */
-#define screenH [UIScreen mainScreen].bounds.size.height
-#define screenW [UIScreen mainScreen].bounds.size.width
-#define screenBounds [UIScreen mainScreen].bounds
+#define ZHJTabbarHeight 49
+#define ZHJNavBarHeight 44
+#define ZHJScreenH [UIScreen mainScreen].bounds.size.height
+#define ZHJScreenW [UIScreen mainScreen].bounds.size.width
+#define ZHJScreenBounds [UIScreen mainScreen].bounds
 #define ZHJStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 
 #endif

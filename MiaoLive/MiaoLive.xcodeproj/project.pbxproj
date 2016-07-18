@@ -23,6 +23,10 @@
 		2F4D9CA71D3B9C8B00BA2675 /* ShowTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9C991D3B9C8B00BA2675 /* ShowTimeViewController.m */; };
 		2F4D9CA81D3B9C8B00BA2675 /* UIBarButtonItem+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9C9D1D3B9C8B00BA2675 /* UIBarButtonItem+ZJExtension.m */; };
 		2F4D9CA91D3B9C8B00BA2675 /* UIView+ZJExtense.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9C9F1D3B9C8B00BA2675 /* UIView+ZJExtense.m */; };
+		2F4D9CAF1D3D045E00BA2675 /* ZHJNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9CAE1D3D045E00BA2675 /* ZHJNetworkTool.m */; };
+		2F4D9CBE1D3D08D100BA2675 /* ZHJNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9CBD1D3D08D100BA2675 /* ZHJNew.m */; };
+		2F4D9CC21D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9CC01D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m */; };
+		2F4D9CC31D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D9CC11D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib */; };
 		AF3F4F1DC15163E00C56B2D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CD417F4B1C189F075ACB6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,13 @@
 		2F4D9C9D1D3B9C8B00BA2675 /* UIBarButtonItem+ZJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZJExtension.m"; sourceTree = "<group>"; };
 		2F4D9C9E1D3B9C8B00BA2675 /* UIView+ZJExtense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJExtense.h"; sourceTree = "<group>"; };
 		2F4D9C9F1D3B9C8B00BA2675 /* UIView+ZJExtense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJExtense.m"; sourceTree = "<group>"; };
+		2F4D9CAD1D3D045E00BA2675 /* ZHJNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNetworkTool.h; sourceTree = "<group>"; };
+		2F4D9CAE1D3D045E00BA2675 /* ZHJNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNetworkTool.m; sourceTree = "<group>"; };
+		2F4D9CBC1D3D08D100BA2675 /* ZHJNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNew.h; sourceTree = "<group>"; };
+		2F4D9CBD1D3D08D100BA2675 /* ZHJNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNew.m; sourceTree = "<group>"; };
+		2F4D9CBF1D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNewCollectionViewCell.h; sourceTree = "<group>"; };
+		2F4D9CC01D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNewCollectionViewCell.m; sourceTree = "<group>"; };
+		2F4D9CC11D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHJNewCollectionViewCell.xib; sourceTree = "<group>"; };
 		49CD417F4B1C189F075ACB6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4F2580D588D70B3BC15F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,12 +219,9 @@
 			children = (
 				2F4D9C841D3B9C8B00BA2675 /* HomeViewController.h */,
 				2F4D9C851D3B9C8B00BA2675 /* HomeViewController.m */,
-				2F4D9C881D3B9C8B00BA2675 /* ZHJHotTableViewController.h */,
-				2F4D9C891D3B9C8B00BA2675 /* ZHJHotTableViewController.m */,
-				2F4D9C8C1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.h */,
-				2F4D9C8D1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.m */,
-				2F4D9C861D3B9C8B00BA2675 /* ZHJCareViewController.h */,
-				2F4D9C871D3B9C8B00BA2675 /* ZHJCareViewController.m */,
+				2F4D9CB21D3D073300BA2675 /* Care */,
+				2F4D9CB11D3D072A00BA2675 /* New */,
+				2F4D9CB01D3D070E00BA2675 /* Hot */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -235,6 +243,8 @@
 		2F4D9C921D3B9C8B00BA2675 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2F4D9CAD1D3D045E00BA2675 /* ZHJNetworkTool.h */,
+				2F4D9CAE1D3D045E00BA2675 /* ZHJNetworkTool.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -285,6 +295,110 @@
 				2F4D9C9F1D3B9C8B00BA2675 /* UIView+ZJExtense.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		2F4D9CB01D3D070E00BA2675 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9CB91D3D07FD00BA2675 /* ViewControllers */,
+				2F4D9CBA1D3D080500BA2675 /* Models */,
+				2F4D9CBB1D3D085D00BA2675 /* Views */,
+			);
+			name = Hot;
+			sourceTree = "<group>";
+		};
+		2F4D9CB11D3D072A00BA2675 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9CB31D3D07A200BA2675 /* ViewControllers */,
+				2F4D9CB41D3D07B500BA2675 /* Models */,
+				2F4D9CB51D3D07BC00BA2675 /* Views */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		2F4D9CB21D3D073300BA2675 /* Care */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9CB61D3D07CF00BA2675 /* ViewControllers */,
+				2F4D9CB71D3D07D800BA2675 /* Models */,
+				2F4D9CB81D3D07DD00BA2675 /* Views */,
+			);
+			name = Care;
+			sourceTree = "<group>";
+		};
+		2F4D9CB31D3D07A200BA2675 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9C8C1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.h */,
+				2F4D9C8D1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F4D9CB41D3D07B500BA2675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9CBC1D3D08D100BA2675 /* ZHJNew.h */,
+				2F4D9CBD1D3D08D100BA2675 /* ZHJNew.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2F4D9CB51D3D07BC00BA2675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9CBF1D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.h */,
+				2F4D9CC01D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m */,
+				2F4D9CC11D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2F4D9CB61D3D07CF00BA2675 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9C861D3B9C8B00BA2675 /* ZHJCareViewController.h */,
+				2F4D9C871D3B9C8B00BA2675 /* ZHJCareViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F4D9CB71D3D07D800BA2675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2F4D9CB81D3D07DD00BA2675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2F4D9CB91D3D07FD00BA2675 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9C881D3B9C8B00BA2675 /* ZHJHotTableViewController.h */,
+				2F4D9C891D3B9C8B00BA2675 /* ZHJHotTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F4D9CBA1D3D080500BA2675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2F4D9CBB1D3D085D00BA2675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		4ED0AB1D38D41746811C9CB5 /* Pods */ = {
@@ -414,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4D9C211D3A6CB400BA2675 /* LaunchScreen.storyboard in Resources */,
+				2F4D9CC31D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib in Resources */,
 				2F4D9C1E1D3A6CB400BA2675 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,11 +604,14 @@
 			files = (
 				2F4D9CA51D3B9C8B00BA2675 /* ZHJTabBarController.m in Sources */,
 				2F4D9CA31D3B9C8B00BA2675 /* ZHJNavigationController.m in Sources */,
+				2F4D9CC21D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m in Sources */,
 				2F4D9CA81D3B9C8B00BA2675 /* UIBarButtonItem+ZJExtension.m in Sources */,
 				2F4D9CA41D3B9C8B00BA2675 /* ZHJNewCollectionViewController.m in Sources */,
 				2F4D9CA91D3B9C8B00BA2675 /* UIView+ZJExtense.m in Sources */,
+				2F4D9CBE1D3D08D100BA2675 /* ZHJNew.m in Sources */,
 				2F4D9C161D3A6CB400BA2675 /* AppDelegate.m in Sources */,
 				2F4D9C131D3A6CB400BA2675 /* main.m in Sources */,
+				2F4D9CAF1D3D045E00BA2675 /* ZHJNetworkTool.m in Sources */,
 				2F4D9CA61D3B9C8B00BA2675 /* MeViewController.m in Sources */,
 				2F4D9CA11D3B9C8B00BA2675 /* ZHJCareViewController.m in Sources */,
 				2F4D9CA01D3B9C8B00BA2675 /* HomeViewController.m in Sources */,

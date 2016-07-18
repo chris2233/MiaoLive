@@ -25,7 +25,7 @@
 
 - (void)setupTableView
 {
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+     
 }
 
 #pragma mark - Table view data source
@@ -47,6 +47,10 @@
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"reuseIdentifier"];
     }
+    
+
+    cell.textLabel.text = [NSString stringWithFormat:@"tableView-第%ld行",indexPath.row];
+    
     return cell;
 }
 
