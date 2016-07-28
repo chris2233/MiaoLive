@@ -7,6 +7,7 @@
 //
 
 #import "ZHJNew.h"
+#import <MJExtension.h>
 
 @implementation ZHJNew
 

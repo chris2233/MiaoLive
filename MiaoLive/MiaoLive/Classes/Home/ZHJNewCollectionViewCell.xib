@@ -16,7 +16,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_head" translatesAutoresizingMaskIntoConstraints="NO" id="ZVd-Ew-tnQ" userLabel="占位图片">
                         <rect key="frame" x="0.0" y="0.0" width="274" height="213"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag_new_33x17_" translatesAutoresizingMaskIntoConstraints="NO" id="x2s-eO-AGY" userLabel="star">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2s-eO-AGY" userLabel="star">
                         <rect key="frame" x="236" y="5" width="33" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="33" id="3rS-rg-9oj"/>
@@ -24,11 +24,21 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1Z-Yc-dcv" userLabel="地区">
-                        <rect key="frame" x="5" y="5" width="44" height="15"/>
+                        <rect key="frame" x="5" y="5" width="56" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="92M-CN-pTm"/>
+                            <constraint firstAttribute="width" constant="56" id="ghL-hq-Ihp"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <state key="normal" title="地区市" image="location_white_8x9_">
+                        <state key="normal" title="所在地区" image="location_white_8x9_">
                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="92M-CN-pTm"/>
+                                <exclude reference="ghL-hq-Ihp"/>
+                            </mask>
+                        </variation>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3te-sT-44F">
                         <rect key="frame" x="125" y="193" width="24" height="15"/>
@@ -62,7 +72,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="flag_new_33x17_" width="33" height="17"/>
         <image name="location_white_8x9_" width="8" height="9"/>
         <image name="placeholder_head" width="100" height="100"/>
     </resources>

@@ -27,6 +27,8 @@
 		2F4D9CBE1D3D08D100BA2675 /* ZHJNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9CBD1D3D08D100BA2675 /* ZHJNew.m */; };
 		2F4D9CC21D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9CC01D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m */; };
 		2F4D9CC31D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D9CC11D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib */; };
+		2F79DD7C1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F79DD7B1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.m */; };
+		2F79DD7F1D3E76490012EFE3 /* ZHJTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F79DD7E1D3E76490012EFE3 /* ZHJTopWindow.m */; };
 		AF3F4F1DC15163E00C56B2D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CD417F4B1C189F075ACB6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,10 @@
 		2F4D9CBF1D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNewCollectionViewCell.h; sourceTree = "<group>"; };
 		2F4D9CC01D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNewCollectionViewCell.m; sourceTree = "<group>"; };
 		2F4D9CC11D3D0D5B00BA2675 /* ZHJNewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHJNewCollectionViewCell.xib; sourceTree = "<group>"; };
+		2F79DD7A1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJRefreshGifHeader.h; sourceTree = "<group>"; };
+		2F79DD7B1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJRefreshGifHeader.m; sourceTree = "<group>"; };
+		2F79DD7D1D3E76490012EFE3 /* ZHJTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJTopWindow.h; sourceTree = "<group>"; };
+		2F79DD7E1D3E76490012EFE3 /* ZHJTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJTopWindow.m; sourceTree = "<group>"; };
 		49CD417F4B1C189F075ACB6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4F2580D588D70B3BC15F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,10 +258,8 @@
 		2F4D9C931D3B9C8B00BA2675 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				2F4D9C8E1D3B9C8B00BA2675 /* ZHJTabBarController.h */,
-				2F4D9C8F1D3B9C8B00BA2675 /* ZHJTabBarController.m */,
-				2F4D9C8A1D3B9C8B00BA2675 /* ZHJNavigationController.h */,
-				2F4D9C8B1D3B9C8B00BA2675 /* ZHJNavigationController.m */,
+				2F79DD811D3E76910012EFE3 /* Views */,
+				2F79DD801D3E76750012EFE3 /* Controllers */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -332,6 +336,8 @@
 			children = (
 				2F4D9C8C1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.h */,
 				2F4D9C8D1D3B9C8B00BA2675 /* ZHJNewCollectionViewController.m */,
+				2F79DD7A1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.h */,
+				2F79DD7B1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -397,6 +403,26 @@
 		2F4D9CBB1D3D085D00BA2675 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2F79DD801D3E76750012EFE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D9C8E1D3B9C8B00BA2675 /* ZHJTabBarController.h */,
+				2F4D9C8F1D3B9C8B00BA2675 /* ZHJTabBarController.m */,
+				2F4D9C8A1D3B9C8B00BA2675 /* ZHJNavigationController.h */,
+				2F4D9C8B1D3B9C8B00BA2675 /* ZHJNavigationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2F79DD811D3E76910012EFE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F79DD7D1D3E76490012EFE3 /* ZHJTopWindow.h */,
+				2F79DD7E1D3E76490012EFE3 /* ZHJTopWindow.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -612,6 +638,8 @@
 				2F4D9C161D3A6CB400BA2675 /* AppDelegate.m in Sources */,
 				2F4D9C131D3A6CB400BA2675 /* main.m in Sources */,
 				2F4D9CAF1D3D045E00BA2675 /* ZHJNetworkTool.m in Sources */,
+				2F79DD7F1D3E76490012EFE3 /* ZHJTopWindow.m in Sources */,
+				2F79DD7C1D3E66BB0012EFE3 /* ZHJRefreshGifHeader.m in Sources */,
 				2F4D9CA61D3B9C8B00BA2675 /* MeViewController.m in Sources */,
 				2F4D9CA11D3B9C8B00BA2675 /* ZHJCareViewController.m in Sources */,
 				2F4D9CA01D3B9C8B00BA2675 /* HomeViewController.m in Sources */,

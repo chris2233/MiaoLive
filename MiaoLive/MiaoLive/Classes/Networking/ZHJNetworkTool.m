@@ -22,7 +22,6 @@ static ZHJNetworkTool *_manager;
         // 设置可接受数据的type
         _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/xml", @"text/plain", nil];
     });
-    
     return _manager;
 }
 
